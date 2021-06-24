@@ -2,24 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-html {
-    font-size: 10px;
     font-family: 'Dela Gothic One', cursive;
-    font-size: small;
 }
-a {
-    text-decoration: none;
-}
+
 .container {
     min-height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 #hero {
-    background-image: url("./images/banner.jpg");
+    background-image: url("https://cityhonda.in/storage/app/uploads/public/5f5/5f3/510/5f55f351017d7922822364.jpg");
     background-size: cover;
     background-position:  center;
     position: relative;
@@ -40,6 +33,7 @@ a {
     font-size: 4rem;
     position: relative;
     color: black
+    
 }
 .hero h1 span{
     position: absolute;
@@ -51,19 +45,22 @@ a {
     animation: text_reveal_box 1s ease;
     animation-delay: 1s;
 }
-#hero .cta {
+.cta {
     display: inline-block;
-    padding: 10px 30px;
     color:black;
+    text-decoration: none;
     background-color: transparent;
     border: 2px solid black;
     font-size: 2rem;
+    padding: 0;
+    margin-bottom: 700px;
+    position: absolute;
+    right: 0;
     text-transform: uppercase;
-    letter-spacing: 1rem;
-    margin-top: 36px;
     transition: .3s ease background-colour;
     transition-property: background-color, color;
 }
+
 #hero .cta:hover {
     color: wheat;
     background-color: black;
