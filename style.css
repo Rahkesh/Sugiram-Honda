@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: small;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero {
+    background-image: url(/images/banner.jpg);
+    background-size:cover   ;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}  
+
+.h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+.hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: black
+}
+.hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: wheat;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+#hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color:black;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 36px;
+    transition: .3s ease background-colour;
+    transition-property: background-color, color;
+}
+#hero .cta:hover {
+    color: wheat;
+    background-color: black;
+}
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+
+    }
+100% {
+    width: 0;
+    left: 100%;
+}
+}    
+
+  
